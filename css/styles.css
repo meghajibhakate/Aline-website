@@ -376,9 +376,9 @@ select:disabled {
 button,
 [type=button],
 [type=reset],
-[type=submit] {
+/* [type=submit] {
   -webkit-appearance: button;
-}
+} */
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -7722,8 +7722,9 @@ textarea.form-control-lg {
 /* rtl:end:remove */
 .text-primary {
   --bs-text-opacity: 1;
+  color: #003478;
   /* color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important; */
-  color: green;
+  
 }
 
 .text-secondary {
@@ -11327,7 +11328,7 @@ hr.divider {
   height: 0.2rem;
   max-width: 3.25rem;
   margin: 1.5rem auto;
-  background-color: #f4623a;
+  background-color: #003478;
   opacity: 1;
 }
 
@@ -11337,17 +11338,17 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
-  /* background-color: #002352; */
+  /* background-color: #fff; */
+  background-color: rgb(0,250,154);
   transition: background-color 0.2s ease;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
-  color: #212529;
+  color: #074788;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
-  color: #6c757d;
+  color: #074788;
   /* color: white; */
 
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11355,12 +11356,16 @@ hr.divider-light {
   font-size: 0.9rem;
   padding: 0.75rem 0;
 }
+
+
 #mainNav .navbar-nav .nav-item .nav-link:hover, #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #f4623a;
+  color: #013971;
 }
-#mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #f4623a !important;
-}
+/* #mainNav .navbar-nav .nav-item .nav-link.active { */
+  /* color: #f4623a !important; */
+  /* text-decoration: underline; */
+
+/* } */
 @media (min-width: 992px) {
   #mainNav {
     box-shadow: none;
@@ -11373,7 +11378,8 @@ hr.divider-light {
     color: #fff;
   }
   #mainNav .navbar-nav .nav-item .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    /* color: rgba(255, 255, 255, 0.7); */
+       color: #f8f9fa;
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11383,9 +11389,9 @@ hr.divider-light {
     padding-right: 0;
   }
   #mainNav.navbar-shrink {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-    background-color: #fff;
-    /* background-color: #002352; */
+    /* box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); */
+    /* background-color: #fff; */
+    background-color: rgb(0,250,154);
 
   }
   #mainNav.navbar-shrink .navbar-brand {
@@ -11395,27 +11401,28 @@ hr.divider-light {
     color: #f4623a;
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #212529;
+    color: #074788;
     /* color: #fff; */
   }
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
-    color: #f4623a;
+    /* color: #f4623a; */
+    color:#05307b;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background-image: url("../assets/img/Home\ Page.jpg");
+  background-image: url("../assets/img/Main-img.png");
   /* background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/Home\ Page.jpg"); */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
 }
-header.masthead h1, header.masthead .h1 {
+/* header.masthead h1, header.masthead .h1 {
   font-size: 2.25rem;
-}
+} */
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -11423,7 +11430,7 @@ header.masthead h1, header.masthead .h1 {
     padding-top: 4.5rem;
     padding-bottom: 0;
   }
-  header.masthead p {
+  /* header.masthead p {
     font-size: 1.15rem;
   }
   header.masthead h1, header.masthead .h1 {
@@ -11433,7 +11440,7 @@ header.masthead h1, header.masthead .h1 {
 @media (min-width: 1200px) {
   header.masthead h1, header.masthead .h1 {
     font-size: 3.5rem;
-  }
+  } */
 }
 
 #portfolio .container-fluid, #portfolio .container-sm, #portfolio .container-md, #portfolio .container-lg, #portfolio .container-xl, #portfolio .container-xxl {
@@ -11455,7 +11462,10 @@ header.masthead h1, header.masthead .h1 {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  /* background: rgb(0,250,154); */
+  /* background: rgb(0 250 154 / 85%); */
+background-color: rgb(6 60 115 / 85%);
+  /* background: rgba(244, 98, 58, 0.9); */
   transition: opacity 0.25s ease;
   text-align: center;
 }
@@ -11465,7 +11475,7 @@ header.masthead h1, header.masthead .h1 {
   font-weight: 600;
   text-transform: uppercase;
 }
-#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
+#portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm  .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
   font-size: 1.2rem;
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
@@ -11482,4 +11492,16 @@ header.masthead h1, header.masthead .h1 {
 }
 .pic{
   border-radius: 50%;
+}
+
+@media (max-width: 500px) {
+  header.masthead {
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background-image: url("../assets/img/small-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
 }
