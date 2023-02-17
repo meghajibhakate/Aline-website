@@ -25,19 +25,28 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <img src="assets/img/logo.png" alt="logo" width="140px" height="60px">
+            <img src="assets/img/logo3.png" alt="logo" width="140px" height="60px">
             <!-- <a class="navbar-brand" href="#page-top">Start Bootstrap</a> -->
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="index.html">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#services">WHO WE ARE</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolio">WHAT WE DO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav" href="Who-we-are.html">WHO WE ARE</a></li>
+                    <li class="nav-item"><a class="nav-link" id="nav" href="#">WHAT WE DO</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link" id="nav" href="index.html">FAQ ▼</a>
+                        <!-- <i class="fa-solid fa-caret-down"></i> -->
+                        <div class="dropdown-content">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#">Link 3</a>
+                        </div>
+
+                    </li>
                 </ul>
             </div>
+
         </div>
     </nav>
     <!-- *********** -->
@@ -63,6 +72,8 @@
                     enim optio iusto iste quia cum nam porro modi ducimus. Soluta laboriosam, unde adipisci laudantium
                     nihil, voluptate excepturi quos, distinctio hic consequuntur laborum? Temporibus doloribus,
                     exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
+                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus inctio hic consequuntur laborum? Temporibus doloribus,
+                    exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
                     corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus </p>
             </div>
         </div>
@@ -75,6 +86,8 @@
                     atque reprehenderit maiores impedit non quam molestiae commodi, iure consectetur sint sit nesciunt
                     enim optio iusto iste quia cum nam porro modi ducimus. Soluta laboriosam, unde adipisci laudantium
                     nihil, voluptate excepturi quos, distinctio hic consequuntur laborum? Temporibus doloribus,
+                    exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
+                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus inctio hic consequuntur laborum? Temporibus doloribus,
                     exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
                     corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus </p>
             </div>
@@ -89,6 +102,8 @@
                     enim optio iusto iste quia cum nam porro modi ducimus. Soluta laboriosam, unde adipisci laudantium
                     nihil, voluptate excepturi quos, distinctio hic consequuntur laborum? Temporibus doloribus,
                     exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
+                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus inctio hic consequuntur laborum? Temporibus doloribus,
+                    exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
                     corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus </p>
             </div>
         </div>
@@ -102,23 +117,38 @@
                     enim optio iusto iste quia cum nam porro modi ducimus. Soluta laboriosam, unde adipisci laudantium
                     nihil, voluptate excepturi quos, distinctio hic consequuntur laborum? Temporibus doloribus,
                     exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
-                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus </p>
+                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus inctio hic consequuntur laborum? Temporibus doloribus,
+                    exercitationem id recusandae voluptas dolor ratione voluptates sint unde laborum, aut repellat
+                    corporis totam eos? Optio obcaecati, hic nulla, at ullam necessitatibus</p>
             </div>
         </div>
     </main>
 
-    <section class="page-section bg-dark text-white">
+     <!-- Call to action-->
+     <section class="page-section bg-dark text-white contact">
         <div class="container px-4 px-lg-5 text-center">
-            <h2 >Contact Us</h2>
+            <!-- <h2>Contact Us</h2> -->
+            <h2 class="text-center mt-0">Contact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero tenetur harum nemo voluptatem a quasi
+                incidunt rem ratione modi eos dignissimos minima necessitatibus soluta id, ab quae voluptatum explicabo
+                quaerat cum esse minus consectetur repellat? Voluptatem impedit ut delectus at!</p>
         </div>
     </section>
-    <!-- ******************* -->
+    <!-- Contact-->
+
     <!-- Footer-->
-    <!-- <footer class="bg-light py-5">
-        <div class="container px-4 px-lg-5">
+    <footer class="bg-light py-5">
+        <div class="container px-4 px-lg-5" id="footer">
             <div class="small text-center text-muted">Copyright &copy; 2022 - Company Name</div>
+            <div class="small text-center text-muted" style="padding-top: 20px;">
+                <em>built with ❤️ by <a id="foot-link" href="https://t4glabs.discourse.group/u?cards=yes&group=Tech4Good-Fellows" target="_blank"><u> T4G Labs Fellows</u> </a>
+                    & Hosted Freely on <a id="foot-link" href="#" target="_blank"><u> Github Pages</u> </a>
+                </em>
+            </div>
+            
+
         </div>
-    </footer> -->
+    </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
