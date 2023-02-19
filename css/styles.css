@@ -12393,7 +12393,8 @@ hr.divider-light {
   }
 
   #mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
-    color: #074788;
+    color: #0e2d6a;
+    /* color: #074788; */
     padding-top: 12px;
     /* color: #fff; */
   }
@@ -12519,6 +12520,10 @@ padding-left: 49px;
 padding-top: 33px;
 
 } */
+
+.info {
+  text-align: justify;
+}
 .div1 {
   padding-left: 60px;
   padding-top: 121px;
@@ -12632,6 +12637,9 @@ padding-top: 33px;
   .main-div{
     padding: 40px 70px;
   }
+  .info {
+    text-align: justify;
+  }
 }
 
 @media (max-width: 800px) {
@@ -12647,6 +12655,7 @@ padding-top: 33px;
 
   .info {
     font-size: 16px;
+    text-align: justify;
   }
   .main-div{
     padding: 40px 50px;
