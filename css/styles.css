@@ -79,8 +79,8 @@
 
 body {
   margin: 0;
-  font-family: sans-serif;
-  /* font-family: var(--bs-body-font-family); */
+  /* font-family: sans-serif; */
+  font-family: var(--bs-body-font-family);
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -6911,6 +6911,8 @@ fieldset:disabled .btn {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-top: 31px;
+
 }
 
 .carousel-inner::after {
